@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cost Estimation Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ???-->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#" id="openPrompt">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#" onclick="scrollToBottom()">Estimation</a></li>
+          <li><a href="#" id="openPrompt1">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ???-->
+    <!-- ???-->
+    <section class="features">
+      <div class="feature">
+        <h2>Flexibility and Convenienc</h2>
+        <p>
+          Consistent Travel Time: Biking can offer more consistent travel times,
+          as you are less affected by delays and disruptions that can occur with
+          public transport.
+        </p>
+        <a
+          href="https://motorcyclehabit.com/17-benefits-of-riding-a-motorcycle-that-no-one-talks-about/"
+          target="_blank"
+          class="learn-more-link"
+          >Learn More</a
+        >
+      </div>
+      <div class="feature">
+        <h2>Health Benefits</h2>
+        <p>
+          Mental Well-Being: Biking can reduce stress and improve mood, thanks
+          to the physical activity and the enjoyment of riding.
+        </p>
+        <a
+          href="https://www.heart.org/en/healthy-living/healthy-lifestyle/stress-management/spend-time-in-nature-to-reduce-stress-and-anxiety"
+          target="_blank"
+          class="learn-more-link"
+          >Learn More</a
+        >
+      </div>
+      <div class="feature">
+        <h2>Independence and Freedom</h2>
+        <p>
+          Personal Space: A bike offers personal space, which can be more
+          comfortable than crowded public transport.
+        </p>
+        <a
+          href="https://www.hondaph.com/news/surprising-benefits-of-motorcycle-riding"
+          target="_blank"
+          class="learn-more-link"
+          >Learn More</a
+        >
+      </div>
+    </section>
+    <!-- ???-->
+    <!-- <div id="result1">
+      <h1>Wlcome to My Webpage</h1>
+      <h2>Your One-Stop solution for all your needs</h2>
+    </div> -->
+    <div class="container">
+      <h1><-Cost Without Reasources Estimation Calculator-></h1>
+      <form id="costForm">
+        <label for="dailyCost">Daily Cost:</label>
+        <input type="number" id="dailyCost" required />
+
+        <label for="requedyear1">Required year:</label>
+        <input type="number" id="requedyear" required />
+
+        <p id="monthly">Monthly cost:</p>
+        <p id="yearly">Yearly cost:</p>
+        <p id="totalyear">Cost for requed years:</p>
+        <button type="button" onclick="withoutadd()">Calculate</button>
+      </form>
+    </div>
+    <!-- ???-->
+    <section class="portfolio">
+      <h2>Our Preview</h2>
+      <div class="portfolio-items">
+        <div class="portfolio-item">
+          <img src="OIP (3).jpeg" alt="Portfolio 1" />
+          <h3>Project One</h3>
+        </div>
+        <div class="portfolio-item">
+          <img src="OIP (2).jpeg" alt="Portfolio 2" />
+          <h3>Project Two</h3>
+        </div>
+        <div class="portfolio-item">
+          <img src="OIP.jpeg" alt="Portfolio 3" />
+          <h3>Project Three</h3>
+        </div>
+      </div>
+    </section>
+    <!-- ???-->
+    <br />
+    <div class="container1">
+      <h1>Cost Estimation Calculator</h1>
+      <form id="costForm1">
+        <label for="purchaseCost">Purchase Cost:</label>
+        <input type="number" id="purchaseCost" required />
+
+        <label for="maintenanceCost">Maintenance Cost (per year):</label>
+        <input type="number" id="maintenanceCost" required />
+
+        <div class="container2">
+          <h1>Everyday cost</h1>
+          <form id="costForm2">
+            <label for="fuleCost1">Fuel price(current):</label>
+            <input type="number" id="fuleCost" required />
+
+            <label for="Mileage1">Mileage(according to bike):</label>
+            <input type="number" id="Mileage" required />
+
+            <label for="Distance1">Distance(for each day):</label>
+            <input type="number" id="Distance" required />
+
+            <button type="button" onclick="eveydaybikecost()">Calculate</button>
+            <h4 id="eveydaybikecost2">Everyday cost:</h4>
+          </form>
+        </div>
+
+        <label for="timePeriod">Time Period (years):</label>
+        <input type="number" id="timePeriod" required />
+
+        <label for="sellprice">Selling price:</label>
+        <input type="number" id="sellprice" required />
+
+        <button type="button" onclick="calculateCost()">Calculate</button>
+
+        <h4>Cost without taking buying price in consider(INTERST):-</h4>
+        <div>
+          <p id="monthly1">Monthly cost(SAVED MONEY) Without INTERST:</p>
+          <p id="yearly1">Yearly Cost (SAVED MONEY) Without INTERST:</p>
+          <p id="totalyear1">Cost for Requed years:</p>
+        </div>
+
+        <div>
+          <h2 id="center1">
+            Cost with every thing in consider/final calculation:-
+          </h2>
+          <p id="monthly2">How much we Will Overall Save Monthly :</p>
+          <p id="yearly2">How much we Will Overall Save Yearly cost:</p>
+          <p id="totalyear2">
+            How much we Will Overall Save Throughout Our Decision:
+          </p>
+          <h3 id="finalpr">COMPAIRED FINAL PRICE:</h3>
+        </div>
+      </form>
+    </div>
+    <!-- ???-->
+    <!-- <section class="contact">
+      <
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" required></textarea>
+        <button type="submit">submit</button>
+      </form>
+    </section> -->
+    <!-- ??? -->
+    <footer>
+      <div class="footer-content">
+        <div class="quick-links">
+          <a href="#">About Us</a>
+          <a href="#">Contact</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="newsletter">
+          <h2 id="endsta">Thanks for your time---></h2>
+          <input type="email" id="emailinput" placeholder="Enter your email" />
+          <button type="button" onclick="savedeatils()">Enter</button>
+        </div>
+      </div>
+    </footer>
+    <!-- ??? -->
+    <!-- ???-->
+    <div id="footer2">
+      <p>&copy; 2024 Your Company. All rights reserved to saras kashyap.</p>
+    </div>
+    <!-- ??? -->
+    <!-- todo 1nd side prompt-->
+    <div id="sidePrompt" class="side-prompt">
+      <div class="prompt-content">
+        <span id="closePrompt" class="close">&times;</span>
+        <h2>Find Me Here</h2>
+        <p>Social Media Platforms list.</p>
+        <div class="social-icons">
+          <a
+            href="https://youtu.be/RJu99xc3hlo"
+            target="_blank"
+            title="Subscribe to our YouTube"
+          >
+            <img
+              id="facimg"
+              src="https://cdn-icons-png.flaticon.com/512/174/174883.png"
+              alt="YouTube"
+            />
+            <i class="fab fa-youtube">YouTube</i>
+          </a>
+          <br />
+          <br />
+          <a
+            href="https://www.instagram.com/tech_mazduur?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank"
+            title="Follow us on Instagram"
+          >
+            <img
+              id="facimg"
+              src="https://cdn-icons-png.flaticon.com/512/1409/1409946.png"
+              alt="Instagram"
+            />
+            <i class="fab fa-instagram">Instagram</i>
+          </a>
+          <br />
+          <br />
+          <a
+            href="https://www.linkedin.com/in/saras-kashyap-62a0bb326/"
+            target="_blank"
+            title="Conect to linkedin"
+          >
+            <img
+              id="facimg"
+              src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+              alt="LinkedIn"
+            />
+            <i class="fab fa-twitter">linkedin</i>
+          </a>
+          <br />
+          <br />
+
+          <a
+            href="https://www.facebook.com/YourPage"
+            target="_blank"
+            title="Like us on Facebook"
+          >
+            <img
+              id="facimg"
+              src="https://cdn-icons-png.flaticon.com/512/124/124010.png"
+              alt="Facebook"
+            /><i class="fab fa-facebook">Facebook</i>
+          </a>
+          <br />
+          <br />
+          <a
+            href="https://www.twitter.com/YourHandle"
+            target="_blank"
+            title="Follow us on Twitter"
+          >
+            <img
+              id="facimg"
+              src="https://cdn-icons-png.flaticon.com/512/124/124021.png"
+              alt="Twitter"
+            />
+            <i class="fab fa-twitter">Twitter</i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- todo 2nd side prompt-->
+    <div id="sidePrompt1" class="side-prompt">
+      <div class="prompt-content">
+        <span id="closePrompt1" class="close">&times;</span>
+        <h2>Find Me Here</h2>
+        <p>contact Info list.</p>
+        <p>contact:-</p>
+        <p>My Gmail: saraskumargolu@gmail.com</p>
+        <a
+          href="https://www.linkedin.com/in/saras-kashyap-62a0bb326/"
+          target="_blank"
+          title="Conect to linkedin"
+          >Linkedin</a
+        >
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
